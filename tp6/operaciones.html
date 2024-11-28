@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Matemáticas</title>
+    <link rel="stylesheet" href="operaciones-styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Operaciones Matemáticas</h1>
+        
+        <table class="operations-table">
+            <thead>
+                <tr>
+                    <th class="animated-header">OPERACIÓN</th>
+                    <th class="animated-header">DESCRIPCIÓN</th>
+                    <th class="animated-header">BOTONES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TOTAL PRODUCTO</td>
+                    <td>Calcula el precio por cantidad</td>
+                    <td><button onclick="performOperation('totalProducto')">Calcular</button></td>
+                </tr>
+                <tr>
+                    <td>30% DEL PRODUCTO</td>
+                    <td>Calcula el 30% del precio del producto</td>
+                    <td><button onclick="performOperation('porcentaje')">Calcular</button></td>
+                </tr>
+                <tr>
+                    <td>25% DESCUENTO</td>
+                    <td>Calcula el precio final con un 25% de descuento</td>
+                    <td><button onclick="performOperation('descuento')">Calcular</button></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div id="result" class="result">El resultado aparecerá aquí.</div>
+        
+        <div class="navigation">
+            <a href="main.html" class="nav-button">Inicio</a>
+        </div>
+    </div>
+    
+    <script src="operaciones-script.js"></script>
+</body>
+</html>
